@@ -1,14 +1,16 @@
 import React from 'react'
-import UserForm from './Components/ModalComponent/UserForm'
-
-
-
+import { Routes, Route } from 'react-router-dom'
+import Homepage from './Components/Pages/Home/Homepage'
+import Dashboard from './Components/Dashboard/Dashboard'
 
 const App: React.FC = () => {
 
   return (
     <>
-      <UserForm/>
+     <Routes>
+        <Route path="/" element={<Homepage/>}/>
+        <Route path="/dashboard" element={<Dashboard/>}/>
+     </Routes>
     </>
   )
 }
