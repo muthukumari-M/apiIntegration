@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import UsersTable from '../TableComponent/UsersTable'
 import { useGetUsersQuery, useCreateUserMutation,useUpdatedUserMutation } from '../../State/Users/userApi';
 
-export interface User {
+// export interface User {
 
-  id: number;
-  name: string;
-  email: string;
+//   id: number;
+//   name: string;
+//   email: string;
  
   
-}
+// }
 
 const UserForm: React.FC = () => {
   const [name, setName] = useState<string>('');
